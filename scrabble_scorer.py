@@ -1,7 +1,7 @@
 # inspired by https://exercism.io/tracks/javascript/exercises/etl/solutions/91f99a3cca9548cebe5975d7ebca6a85
 
 
-OLD_POINT_STRUCTURE = {
+old_point_structure = {
   1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
   2: ['D', 'G'],
   3: ['B', 'C', 'M', 'P'],
@@ -29,6 +29,7 @@ def old_scrabble_scorer(word):
 
 def initial_prompt():
    print("Let's play some Scrabble!\n")
+   word = input("Enter a word.")
 
 
 def simple_scorer():
@@ -50,3 +51,4 @@ def transform():
 
 def run_program():
     word = initial_prompt()
+    old_scrabble_scorer(word)
